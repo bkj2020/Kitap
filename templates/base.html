@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block title %}<title>Hotel</title>{% endblock %}
+    {% block title %}<title>Artillery Library</title>{% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -57,7 +57,7 @@
                     </div>
                     <ul class="header-menu nav">
                         <li class="nav-item">
-                            <a href="{% url 'apartments' %}" class="nav-link">
+                            <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-database"> </i>
                                 Statistics
                             </a>
@@ -345,11 +345,11 @@
                 </div>
         <div class="app-main__outer">
             <div class="app-main__inner">
-                <h3>Some Hotel Administrator</h3>
+                <h3>Local Library Home</h3>
+                <a href="{% url 'app-poisk' %}">Poisk</a>
 
-                {% block parus %}
-
-                {% endblock parus %}
+                {% block main %}
+                {% endblock main %}
             </div>
         </div>
     </div>
