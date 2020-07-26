@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>{{ title }}</title>{% endblock %}
+{% block main %}
+
+    <div class="formcss">
+        <h3 class="text-center">Registration</h3>
+        <hr>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="mb-2 mr-2 btn-transition btn btn-outline-warning">Registration</button>
+        </form>
+    </div>
+{% endblock main %}
+

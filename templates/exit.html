@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>exit</title>{% endblock %}
+
+{% block main %}
+
+    <div class="formcss">
+        <h4 class="text-center">You are out from admin site.</h4>
+        <a href="{% url 'log' %}">Login in admin site</a>
+    </div>
+
+{% endblock main %}
+

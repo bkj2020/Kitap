@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp.apps.MyappConfig',
+    'usersapp.apps.UsersappConfig',
+    'django_extensions',
+     # it is for django_debug utilites
+    'debug_toolbar',
 ]
 
 SITE_ID = 1
@@ -50,6 +54,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     # it is for django_debug utilites
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'kitap.urls'
@@ -133,3 +139,26 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static_in_dev'),
 )
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'simple.log',
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+
+LOGIN_REDIRECT_URL = '../admin/'
+INTERNAL_IPS = ('127.0.0.1', ) # it is for django_debug utilites

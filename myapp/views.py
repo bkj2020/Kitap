@@ -3,11 +3,20 @@ from django.shortcuts import render
 from django.views.generic.list import View
 from django.http import HttpResponse
 from .forms import ContactForm
-
-# === - import table from database - ===
 from .models import Book
+import os
+import logging
+from django.views.decorators.cache import cache_page #if need cache function if class do it with urls.py
 
-# === - look for metadata  request.META - ===
+# Create your views here.
+
+###############
+# Gets or creates a logger in file
+logger = logging.getLogger(__name__) 
+logging.basicConfig(filename='mylog.log', format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level='ERROR')
+################
+
+# === - look for real metadata request.META from sevrer - ===
 def display_meta(request):
     values = request.META.items()
     html = []
@@ -17,12 +26,11 @@ def display_meta(request):
 # === - end of request.META - ===
 
 
-# Create your views here.
 class MainPageView(View):
     template_name = 'base.html'
 
     def get(self, request):
-
+        #import pdb; pdb.set_trace()
         return render(request, 'base.html')
 
 
@@ -39,8 +47,9 @@ class MainPageView(View):
 #             kniga = Book.objects.filter(title__icontains=zapros)
 #             return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
 #     return render(request, 'search_form.html', {'errors': errors})
-
 # new one
+
+
 def search(request):
     errors = []
     if 'zapros' in request.GET:
@@ -55,10 +64,3 @@ def search(request):
     return render(request, 'search_form.html', {'errors': errors})
 
 # End of === - search function  - ===
-
-
-# === - search form  function - ===
-# def search_form(request):
-#
-#     return render(request, 'search_form.html')
-# End of === - search form  function - ===
