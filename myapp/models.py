@@ -6,6 +6,7 @@ python manage.py check
 Следующая команда выведет в консоль SQL нашей первой миграции:
 python manage.py sqlmigrate catalog 0001
 '''
+import os
 
 from django.db import models
 from django.conf import settings
@@ -42,9 +43,9 @@ class Genre(models.Model):
     name = models.CharField(max_length=200, help_text="Enter a book genre (e.g. Science Fiction, French Poetry etc.)")
 
     def get_absolute_url(self):
-        """Returns the url to access a particular author instance."""
-        #return reverse('author-detail', args=[str(self.id)])
-        pass
+        """Returns the url to access a particular category instance."""
+
+        return reverse('category-detail', args=[str(self.id)])
 
     def __str__(self):
         """String for representing the Model object (in Admin site etc.)"""
@@ -65,6 +66,7 @@ class Author(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     date_of_birth = models.DateField(null=True, blank=True)
+    date_of_death = models.DateField('died', null=True, blank=True)
     email = models.EmailField(unique=True, null=True, blank=True)
 
     class Meta:
@@ -72,8 +74,8 @@ class Author(models.Model):
 
     def get_absolute_url(self):
         """Returns the url to access a particular author instance."""
-        #return reverse('author-detail', args=[str(self.id)])
-        pass
+
+        return reverse('author-detail', args=[str(self.id)])
 
     def __str__(self):
         """String for representing the Model object."""
@@ -83,7 +85,10 @@ class Author(models.Model):
 class Book(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
     review_manuscript = models.FileField(upload_to=get_review_manuscript_full_path)
+    # Genre class has already been defined so we can specify the object above.
     fk_genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
+    # Foreign Key used because book can only have one author, but authors can have multiple books
+    # Author as a string rather than object because it hasn't been declared yet in the file.
     fk_author = models.ForeignKey(Author, on_delete=models.CASCADE)
     fk_language = models.ForeignKey(Language, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
@@ -95,8 +100,24 @@ class Book(models.Model):
 
     def get_absolute_url(self):
         """Returns the url to access a particular book instance."""
-        return reverse('book', kwargs={'id': self.pk})
+
+        return reverse('book-detail', args=[str(self.id)])
+
+    def get_book_path(self):
+        """Returns the url to access a particular category instance."""
+
+        # Remove media root path from file path
+        # '/home/kakajan/Projects/Kitap/media/kngaDjango/Django.pdf' - '/home/kakajan/Projects/Kitap/media/' = 'kngaDjango/Django.pdf'
+        review = os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT)
+
+        # Add media url to file path
+        # '/media/' + 'kngaDjango/Django.pdf' = '/media/kngaDjango/Django.pdf'
+        review = settings.MEDIA_URL + review
+
+        return review
+
 
     def __str__(self):
         """String for representing the Model object."""
+
         return self.title

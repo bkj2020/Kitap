@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block title %}<title>Artillery Library</title>{% endblock %}
+
+    {% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -51,7 +53,7 @@
                     <div class="search-wrapper">
                         <div class="input-holder">
                             <input type="text" class="search-input" placeholder="Type to search">
-                            <button class="search-icon"><span></span></button>
+                            <button class="search-icon"  ><span></span></button>
                         </div>
                         <button class="close"></button>
                     </div>
@@ -62,18 +64,21 @@
                                 Statistics
                             </a>
                         </li>
+                        
+                        <li class="btn-group nav-item">
+                            <a href="{% url 'poisk' %}" class="nav-link">
+                                <i class="nav-link-icon fa fa-search"></i>
+                                SEARCH
+                            </a>
+                        </li>
+
                         <li class="btn-group nav-item">
                             <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-edit"></i>
                                 Projects
                             </a>
                         </li>
-<!--                         <li class="btn-group nav-item">
-                            <a href="{% url "reg" %}" class="nav-link">
-                                Registration
-                            </a>
-                        </li>
- -->                        <li class="dropdown nav-item">
+                        <li class="dropdown nav-item">
                            <button style="font-size: .88rem" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-link nav-link">Link</button>
                                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-7px, 33px, 0px);">
                                                 <button type="button" tabindex="0" class="dropdown-item">Menus</button>
@@ -84,7 +89,8 @@
                                                 <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
                                             </div>
                         </li>
-                    </ul>        </div>
+                    </ul>        
+                </div>
                 <div class="app-header-right">
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
@@ -96,10 +102,7 @@
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="{% url 'log' %}">Login</a>
-                                            </li>
-                                        <button type="button" tabindex="0" class="dropdown-item" ><i class="pe-7s-close">Login</i></button>
+                                            <button type="button" tabindex="0" class="dropdown-item" onclick="window.location = '/log/';" >Login</i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -348,8 +351,6 @@
                 </div>
         <div class="app-main__outer">
             <div class="app-main__inner">
-                <h3 class="text-center">Welcom to Japaks Library</h3>
-                <!-- <a href="{% url 'app-poisk' %}">Poisk</a> -->
                     <div class="col-sm-8">
                         {% if messages %}
                             {% for mess in messages %}
@@ -359,9 +360,10 @@
                             {% endfor %}
                         {% endif %}
                     </div>
-                    <h2>{{ c }}</h2>
-                    {% block main %}
-                    {% endblock main %}
+
+                    {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock sidebar %}
+                    {% block main %}<!-- default content text (typically empty) -->{% endblock main %}
+
             </div>
         </div>
     </div>    

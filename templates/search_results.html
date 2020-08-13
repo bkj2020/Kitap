@@ -10,20 +10,23 @@
         <ul>
             {% for kitap in kniga %}
                 <li>{{ kitap.title }}</li>
+                <p><a href="{{ kitap.get_book_path }}"><button class="btn btn-primary">Read book</button></a></p>
+
             {% endfor %}
         </ul>
     {% else %}
         <p style="color: #ba2121">Книг, удовлетворяющих заданному критерию, не найдено.</p>
     {% endif %}
 
-        <br>
+<!--         <br>
 
     {% if kniga %}
         <ul>
             {% for k in kniga %}
-                <a href="{{ k.review_manuscript.url }}">{{ k.title }}</a>
+                <p>{{ k.title }} -> <a href="{{ k.get_book_path }}"><button class="btn btn-primary">Read book</button></a> </p>
+
             {% endfor %}
         </ul>
     {% endif %}
-
+ -->
 {% endblock main %}

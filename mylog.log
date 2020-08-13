@@ -23,3 +23,2139 @@ ZeroDivisionError: division by zero
 26-Jul-20 12:10:38 - INFO - /home/kakajan/Projects/Kitap/usersapp/views.py changed, reloading.
 26-Jul-20 12:11:57 - INFO - /home/kakajan/Projects/Kitap/usersapp/forms.py changed, reloading.
 26-Jul-20 12:13:30 - INFO - /home/kakajan/Projects/Kitap/kitap/urls.py changed, reloading.
+10-Aug-20 00:05:56 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:07:10 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:09:16 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+10-Aug-20 00:11:07 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:11:20 - ERROR - Internal Server Error: /admin/myapp/author/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column myapp_author.date_of_death does not exist
+LINE 1: ...hor"."last_name", "myapp_author"."date_of_birth", "myapp_aut...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "myapp_author.date_of_birth".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1796, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column myapp_author.date_of_death does not exist
+LINE 1: ...hor"."last_name", "myapp_author"."date_of_birth", "myapp_aut...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "myapp_author.date_of_birth".
+
+10-Aug-20 00:18:54 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:23:32 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:25:37 - ERROR - Internal Server Error: /admin/myapp/author/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column myapp_author.date_of_death does not exist
+LINE 1: ...hor"."last_name", "myapp_author"."date_of_birth", "myapp_aut...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "myapp_author.date_of_birth".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1796, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column myapp_author.date_of_death does not exist
+LINE 1: ...hor"."last_name", "myapp_author"."date_of_birth", "myapp_aut...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "myapp_author.date_of_birth".
+
+10-Aug-20 00:25:41 - ERROR - Internal Server Error: /admin/myapp/author/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column myapp_author.date_of_death does not exist
+LINE 1: ...hor"."last_name", "myapp_author"."date_of_birth", "myapp_aut...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "myapp_author.date_of_birth".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1796, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column myapp_author.date_of_death does not exist
+LINE 1: ...hor"."last_name", "myapp_author"."date_of_birth", "myapp_aut...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "myapp_author.date_of_birth".
+
+10-Aug-20 00:29:11 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+10-Aug-20 00:31:08 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+10-Aug-20 00:40:33 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:42:33 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:43:17 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:44:11 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:45:43 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:48:22 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 00:58:17 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+10-Aug-20 00:58:30 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+10-Aug-20 11:27:42 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+10-Aug-20 12:24:45 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 12:25:40 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 12:27:17 - INFO - /home/kakajan/Projects/Kitap/kitap/urls.py changed, reloading.
+10-Aug-20 12:27:30 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 92, in __call__
+    panel.generate_stats(request, response)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py", line 227, in generate_stats
+    query["stacktrace"] = render_stacktrace(query["stacktrace"])
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/utils.py", line 84, in render_stacktrace
+    render_to_string(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/panels/sql_stacktrace.html
+10-Aug-20 12:27:30 - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 99, in __call__
+    bits[-2] += toolbar.render_toolbar()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+10-Aug-20 12:27:54 - ERROR - Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 92, in __call__
+    panel.generate_stats(request, response)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py", line 227, in generate_stats
+    query["stacktrace"] = render_stacktrace(query["stacktrace"])
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/utils.py", line 84, in render_stacktrace
+    render_to_string(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/panels/sql_stacktrace.html
+10-Aug-20 12:27:55 - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 99, in __call__
+    bits[-2] += toolbar.render_toolbar()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+10-Aug-20 12:28:40 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 12:29:04 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 92, in __call__
+    panel.generate_stats(request, response)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py", line 227, in generate_stats
+    query["stacktrace"] = render_stacktrace(query["stacktrace"])
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/utils.py", line 84, in render_stacktrace
+    render_to_string(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/panels/sql_stacktrace.html
+10-Aug-20 12:29:05 - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 99, in __call__
+    bits[-2] += toolbar.render_toolbar()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+10-Aug-20 12:30:50 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 12:31:05 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 12:31:44 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 21:11:51 - INFO - /home/kakajan/Projects/Kitap/kitap/urls.py changed, reloading.
+10-Aug-20 21:12:03 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 33, in get
+    return render(request, 'base.html')
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'reg' not found. 'reg' is not a valid view function or pattern name.
+10-Aug-20 21:17:28 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+10-Aug-20 21:18:19 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+10-Aug-20 22:18:20 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+10-Aug-20 22:56:06 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+11-Aug-20 00:02:18 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:11:40 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 32, in get
+    return render(request, 'base.html')
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 53, in render
+    result = self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+11-Aug-20 00:17:21 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:22:36 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 32, in get
+    return render(request, 'index.html')
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+11-Aug-20 00:29:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:32:41 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:33:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:34:12 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:34:25 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:34:53 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:36:22 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:38:03 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:41:44 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:41:58 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 31, in index
+    num_authors = Author.objects.All().count()  # Метод 'all()' применен по умолчанию.
+AttributeError: 'Manager' object has no attribute 'All'
+11-Aug-20 00:43:27 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 00:52:45 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 00:53:04 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 00:58:31 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:00:29 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:01:23 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:11:45 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 01:12:43 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:14:01 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:18:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:24:37 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:25:55 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:27:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:28:32 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 01:30:14 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 01:31:09 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 10:07:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 10:08:43 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 10:11:45 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 10:14:13 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 10:32:47 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 10:39:19 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 11:19:44 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 11:24:31 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 11:32:51 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/book_list.html
+11-Aug-20 11:36:37 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 11:36:46 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 102, in get_absolute_url
+    return reverse('book', kwargs={'id': self.pk})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book' not found. 'book' is not a valid view function or pattern name.
+11-Aug-20 11:37:54 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 11:38:39 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 102, in get_absolute_url
+    return reverse('book', kwargs={'id': self.pk})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book' not found. 'book' is not a valid view function or pattern name.
+11-Aug-20 11:39:27 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 102, in get_absolute_url
+    return reverse('book', kwargs={'id': self.pk})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book' not found. 'book' is not a valid view function or pattern name.
+11-Aug-20 11:39:31 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 102, in get_absolute_url
+    return reverse('book', kwargs={'id': self.pk})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book' not found. 'book' is not a valid view function or pattern name.
+11-Aug-20 11:56:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 12:12:56 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 12:14:23 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 12:15:21 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 12:19:05 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 12:29:02 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 12:54:35 - ERROR - Internal Server Error: /book/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'Genre' object is not iterable
+11-Aug-20 15:01:41 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 15:11:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 15:15:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 15:15:22 - ERROR - Internal Server Error: /author/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/author_detail.html
+11-Aug-20 15:34:12 - ERROR - Internal Server Error: /author/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/author_detail.html
+11-Aug-20 15:35:44 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 15:54:58 - ERROR - Internal Server Error: /author/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' with arguments '('',)' not found. 1 pattern(s) tried: ['book/(?P<pk>[0-9]+)$']
+11-Aug-20 16:00:38 - ERROR - Internal Server Error: /author/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' with arguments '('',)' not found. 1 pattern(s) tried: ['book/(?P<pk>[0-9]+)$']
+11-Aug-20 16:01:39 - ERROR - Internal Server Error: /author/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' with arguments '('',)' not found. 1 pattern(s) tried: ['book/(?P<pk>[0-9]+)$']
+11-Aug-20 16:01:43 - ERROR - Internal Server Error: /author/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' with arguments '('',)' not found. 1 pattern(s) tried: ['book/(?P<pk>[0-9]+)$']
+11-Aug-20 16:14:57 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 16:16:29 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 16:17:03 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 16:17:23 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 16:18:16 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 16:18:28 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 16:22:01 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+11-Aug-20 16:27:01 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 16:30:25 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 16:34:33 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 16:40:48 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+11-Aug-20 16:50:17 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 17:08:27 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 17:09:35 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+11-Aug-20 17:47:39 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' with arguments '('',)' not found. 1 pattern(s) tried: ['category/(?P<pk>[0-9]+)$']
+11-Aug-20 17:48:24 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' with no arguments not found. 1 pattern(s) tried: ['category/(?P<pk>[0-9]+)$']
+11-Aug-20 17:48:28 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' with no arguments not found. 1 pattern(s) tried: ['category/(?P<pk>[0-9]+)$']
+11-Aug-20 17:49:40 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' with arguments '('',)' not found. 1 pattern(s) tried: ['category/(?P<pk>[0-9]+)$']
+11-Aug-20 17:50:23 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_detail' not found. 'book_detail' is not a valid view function or pattern name.
+11-Aug-20 17:50:28 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_detail' not found. 'book_detail' is not a valid view function or pattern name.
+12-Aug-20 08:46:09 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 08:46:48 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 08:48:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 08:49:52 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 08:52:35 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 08:52:40 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 104, in get_context_data
+    context['books_from_genre'] = self.model.objects.all().book_set.all()
+AttributeError: 'QuerySet' object has no attribute 'book_set'
+12-Aug-20 08:53:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:31:38 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:31:58 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:32:05 - ERROR - Internal Server Error: /category/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 104, in get_context_data
+    context['book'] = Book.model.objects.all()
+AttributeError: type object 'Book' has no attribute 'model'
+12-Aug-20 09:32:23 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:35:05 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:35:48 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:36:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+12-Aug-20 09:37:12 - ERROR - Internal Server Error: /category/1
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 106, in get_context_data
+    context['photo'] = self.get_object().book_set.all().image
+AttributeError: 'QuerySet' object has no attribute 'image'
+12-Aug-20 09:38:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 13:50:56 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 13:51:03 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+13-Aug-20 14:02:55 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 14:11:39 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 14:15:02 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+13-Aug-20 14:33:00 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' with no arguments not found. 1 pattern(s) tried: ['book/(?P<pk>[0-9]+)$']
+13-Aug-20 14:33:44 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'book.get_absolute_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 521, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 24: 'book.get_absolute_url', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+13-Aug-20 14:34:27 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 448, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 446, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '%  book.get_absolute_url %' from '%  book.get_absolute_url %'
+13-Aug-20 14:34:33 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 448, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 446, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '%  book.get_absolute_url %' from '%  book.get_absolute_url %'
+13-Aug-20 14:35:48 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' with no arguments not found. 1 pattern(s) tried: ['book/(?P<pk>[0-9]+)$']
+13-Aug-20 17:44:04 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 448, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 446, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '/k.review_manuscript.url' from '/k.review_manuscript.url'
+13-Aug-20 17:48:58 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 17:49:51 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 17:50:10 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 17:50:25 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 17:50:44 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 17:51:25 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 17:51:47 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 17:57:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 17:58:34 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 57, in index
+    print(path)
+NameError: name 'path' is not defined
+13-Aug-20 17:59:01 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 17:59:05 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 57, in index
+    print(pwd)
+NameError: name 'pwd' is not defined
+13-Aug-20 17:59:19 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 18:21:33 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 18:27:40 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 521, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 23: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+13-Aug-20 18:43:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 18:44:10 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 18:46:51 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+13-Aug-20 23:05:11 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 23:19:07 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:19:13 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: search_results.html
+13-Aug-20 23:19:52 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:33:22 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:43:09 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:44:16 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 23:44:43 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 23:45:29 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 23:50:50 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+13-Aug-20 23:51:20 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:51:24 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:51:47 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:51:55 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:52:04 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:52:20 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:52:28 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:52:57 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:53:23 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:56:25 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:56:56 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+13-Aug-20 23:57:45 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:01:43 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:02:47 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+14-Aug-20 00:02:57 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+14-Aug-20 00:03:47 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+14-Aug-20 00:04:06 - INFO - /home/kakajan/Projects/Kitap/kitap/settings.py changed, reloading.
+14-Aug-20 00:08:14 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:08:37 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 108, in get_book_path
+    return  os.path.relpath(self.path, settings.MEDIA_ROOT) + self.review_manuscript
+NameError: name 'os' is not defined
+14-Aug-20 00:09:00 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:09:19 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:09:23 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 108, in get_book_path
+    return  os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT) #+
+NameError: name 'os' is not defined
+14-Aug-20 00:09:25 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 108, in get_book_path
+    return  os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT) #+
+NameError: name 'os' is not defined
+14-Aug-20 00:09:31 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 108, in get_book_path
+    return  os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT) #+
+NameError: name 'os' is not defined
+14-Aug-20 00:09:48 - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 44, in search
+    return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 108, in get_book_path
+    return  os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT) #+
+NameError: name 'os' is not defined
+14-Aug-20 00:10:15 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:12:23 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:16:33 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:16:48 - ERROR - Internal Server Error: /book/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 857, in _resolve_lookup
+    current = current()
+  File "/home/kakajan/Projects/Kitap/myapp/models.py", line 109, in get_book_path
+    return  MEDIA_URL + os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT)
+NameError: name 'MEDIA_URL' is not defined
+14-Aug-20 00:17:09 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:19:25 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 00:21:05 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
+14-Aug-20 01:58:09 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:02:37 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
