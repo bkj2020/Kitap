@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+
+    <h5><strong>Author: </strong>{{ author }} </h5>
+    <p><strong>Birth: </strong>{{author.date_of_birth}} - <strong>Death: </strong>{% if author.date_of_death %}{{author.date_of_death}}{% endif %}
+        - <strong>Email: </strong>{{ author.email }}</p>
+    
+    
+    <h6>Books</h6>
+    {% for book in author.book_set.all %}
+    <dl>
+        <dt><strong>Title: </strong>{{book}}</dt>
+        <dt><img src='{{ book.image.url }}' class="img-responsive" style="width: 350px; height: 250px;"></dt>
+        <dd><strong>Summary: </strong>{{book.summary}}</dd>
+        <dt><a href="{% url 'book-detail' book.pk %}">Go book</a></dt>
+    <hr>
+    </dl>
+    {% endfor %}
+
+{% endblock main %}

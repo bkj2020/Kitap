@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+
+{% block main %}
+    <h5 class="text-center">Book List</h5>
+    {% if book_list %}
+        <ul>
+            {% for book in book_list %}
+                <li>
+                    <a href="{{ book.get_absolute_url }}">{{ book.title }}</a> - Author -> {{book.fk_author}}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no books in the library.</p>
+    {% endif %}
+
+{% endblock main %}

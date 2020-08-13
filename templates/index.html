@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+    <h5 class="text-center">Welcom to Japaks Library</h5>
+    <ul class="sidebar-nav">
+        <li><a href="{% url 'books' %}">All books</a></li>
+        <li><a href="{% url 'authors' %}">All authors</a></li>
+        <li><a href="{% url 'categories' %}">All category</a></li>
+    </ul>
+{% endblock sidebar %}
+
+
+{% block main %}
+    <p class="text-center"> The library has the following record counts:</p>
+    <ul>
+        <li><strong>Books:</strong> {{ num_books }}</li>
+        <li><strong>Authors:</strong> {{ num_authors }}</li>
+        <li><strong>Category:</strong> {{ num_categorise }}</li>
+
+    </ul>
+{% endblock main %}

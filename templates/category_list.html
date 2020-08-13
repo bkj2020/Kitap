@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+
+{% block main %}
+
+    <h5 class="text-center">Category List</h5>
+    {% if categorya %}
+        <ul>        
+            {% for cat in categorya %}
+                <li><a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a></li>
+            {% endfor %}            
+        </ul>
+    {% else %}
+        <p>There are no category in the library.</p>
+    {% endif %}  
+
+{% endblock main %}

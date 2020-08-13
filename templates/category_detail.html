@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+<div class="container">
+    <h5><strong>Category: </strong>{{ genre.name }}</h5>
+    <hr>
+    <div class="row">
+        {% for books in books_from_genre %}
+        <div class="col-sm-12" style="margin-bottom: 15px;">
+            <div class="col-sm-4">
+                <img src='{{ books.image.url }}' class="img-responsive" style="width: 350px; height: 250px;">
+            </div>
+            <div>
+                <h5 class="text-center">{{ books.title }}</h5>
+                <p>{{ books.summary }}</p>
+                <a href="{{  books.get_absolute_url }}">go books</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock main %}
