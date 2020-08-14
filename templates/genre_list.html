@@ -5,13 +5,12 @@
 {% block sidebar %}
 {% endblock sidebar %}
 
-
 {% block main %}
 
     <h5 class="text-center">Category List</h5>
-    {% if categorya %}
+    {% if genre_list %}
         <ul>        
-            {% for cat in categorya %}
+            {% for cat in genre_list %}
                 <li><a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a></li>
             {% endfor %}            
         </ul>

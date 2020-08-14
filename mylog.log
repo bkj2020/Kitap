@@ -2159,3 +2159,463 @@ NameError: name 'MEDIA_URL' is not defined
 14-Aug-20 00:21:05 - INFO - /home/kakajan/Projects/Kitap/myapp/models.py changed, reloading.
 14-Aug-20 01:58:09 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
 14-Aug-20 02:02:37 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:38:48 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 02:40:45 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 02:41:49 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 02:42:24 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:42:28 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:42:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:42:56 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:43:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:43:50 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 02:44:17 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 02:45:03 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+14-Aug-20 02:45:08 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+14-Aug-20 02:45:21 - INFO - /home/kakajan/Projects/Kitap/myapp/admin.py changed, reloading.
+14-Aug-20 12:01:30 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:09:43 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:09:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:09:51 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:03 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:17 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:24 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:27 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:37 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:10:53 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:02 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:04 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:17 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:19 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:27 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:30 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:35 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:41 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:48 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:11:51 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:05 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:08 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:34 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:36 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:38 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:41 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:46 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:50 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:12:56 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:03 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:10 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:14 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:24 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:40 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:42 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:13:51 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:14:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:14:38 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:14:57 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:15:10 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:15:30 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:15:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:15:56 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:16:01 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:16:08 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:16:16 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:18:24 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:18:36 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:18:41 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:18:43 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:18:46 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:18:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:00 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:02 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:15 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:18 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:20 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:22 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:29 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:31 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:34 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:40 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:42 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:47 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:19:52 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:12 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:15 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:22 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:26 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:29 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:35 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:48 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:20:50 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:29:43 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 57, in index
+    return render(request, 'index.html', context={
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+14-Aug-20 12:32:05 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:37:46 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 57, in index
+    return render(request, 'index.html', context={
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+14-Aug-20 12:37:48 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 57, in index
+    return render(request, 'index.html', context={
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+14-Aug-20 12:38:43 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:01 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:06 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:15 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:18 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:21 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:25 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:27 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:30 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:39:44 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:40:44 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:40:47 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:40:51 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:41:03 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:41:05 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:41:29 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:41:32 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:41:35 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:41:39 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:44:01 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:44:11 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:44:15 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:44:20 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 12:51:11 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:51:13 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:51:14 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:51:17 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 12:51:50 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:02:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:02:52 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:02:55 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:02:59 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:03:02 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:03:25 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:03:26 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:06:19 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:06:46 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:08:09 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:08:11 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:09:42 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:09:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:09:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:09:56 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:09:58 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:10:01 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:10:07 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:10:36 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:10:42 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:11:26 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:11:31 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:15:02 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kakajan/Projects/Kitap/myapp/views.py", line 57, in index
+    return render(request, 'index.html', context={
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+14-Aug-20 13:21:11 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:21:15 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:21:17 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:21:18 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:21:23 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:21:25 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:22:18 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:22:20 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:22:24 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:22:32 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:22:46 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:22:53 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:23:09 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:23:11 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:23:19 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:27:17 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:32:20 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:32:51 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:32:55 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:33:14 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:33:28 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:33:31 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:33:40 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:33:42 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:33:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:34:14 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:34:30 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:34:40 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:34:45 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:34:58 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:35:25 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:35:30 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:35:54 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 13:37:01 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 13:37:09 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:22:47 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:22:49 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:22:53 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:23:57 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:23:59 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:27:35 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:27:50 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:28:04 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:28:18 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:28:31 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:28:44 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:28:55 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:29:01 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:45:38 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/book_list.html
+14-Aug-20 23:48:10 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:48:12 - INFO - /home/kakajan/Projects/Kitap/myapp/urls.py changed, reloading.
+14-Aug-20 23:48:19 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/book_list.html
+14-Aug-20 23:49:38 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:49:51 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:49:54 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:49:57 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:50:09 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:50:27 - ERROR - Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/book_list.html
+14-Aug-20 23:53:07 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:53:11 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+14-Aug-20 23:53:12 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+15-Aug-20 00:10:15 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+15-Aug-20 00:11:17 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+15-Aug-20 00:11:20 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.
+15-Aug-20 00:20:15 - ERROR - Internal Server Error: /category/2
+Traceback (most recent call last):
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/defaulttags.py", line 810, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/kakajan/Projects/env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'genre_detail.book_set.all()'
+15-Aug-20 00:20:48 - INFO - /home/kakajan/Projects/Kitap/myapp/views.py changed, reloading.

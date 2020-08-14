@@ -1,6 +1,7 @@
 # for defined path template to conect with url
 from django.urls import path, include
 from . import views
+from django.conf.urls import url
 from django.views.decorators.cache import cache_page
 
 
@@ -18,11 +19,6 @@ urlpatterns = [
     path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
     path('categories/', views.CategoryListView.as_view(), name='categories'),
     path('category/<int:pk>', views.CategoryDetailView.as_view(), name='category-detail'),
-
-
-
-
      # === - look for real metadata request.META from sevrer - ===
     path('display_meta/', views.display_meta),
-
 ]

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Search form</title>{% endblock %}
+{% block main %}
+    {% csrf_token %}
+    <h2>Поиск</h2>
+    {% if errors %}
+        <ul>
+            {% for error in errors %}
+                <li style="color: #ba2121">{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form action="{% url 'search_view' %}" method="get" id="qq" name="qq" >
+        <input type="text" name="q"/>
+    <br>
+        <input type="submit" value="search"/>
+    </form>
+
+{% endblock main %}
