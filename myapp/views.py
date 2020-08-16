@@ -11,7 +11,7 @@ import logging
 #from django.views.decorators.cache import cache_page #if need cache function if class do it with urls.py
 
 # import all table from models.py 
-from  myapp.models import Publisher, Genre, Language, Author, Book
+from  myapp.models import Publisher, Genre, Language, Author, Book, Predmet, Kafedra, Teacher, Lection, Prezintation
 
 # for searsh book 
 from django.db.models import Q
@@ -30,31 +30,12 @@ def display_meta(request):
 # === - end of request.META - ===
 
 
-# search for title field in database
-def search(request):
-    errors = []
-    if 'zapros' in request.GET:
-        zapros = request.GET['zapros']
-        if not zapros:
-            errors.append('Введите поисковый запрос.')
-        elif len(zapros) > 20:
-            errors.append('Введите не более 20 символов.')
-        else:
-            kniga = Book.objects.filter(title__icontains=zapros)
-            return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
-    return render(request, 'search_form.html', {'errors': errors})
-# End of === - search function  - ===
-
-
 # base page for all pages in this project
 def index(request):
    """View function for home page of site."""
    # Generate counts of some of the main objects
-   num_books = Book.objects.all().count()
-   num_authors = Author.objects.all().count()
-   num_categorise = Genre.objects.all().count()
-   return render(request, 'index.html', context={
-       'num_books':num_books, 'num_authors':num_authors, 'num_categorise':num_categorise})
+
+   return render(request, 'index.html')
 
 
 class BookListView(ListView):
@@ -87,7 +68,6 @@ class CategoryListView(ListView):
     template_name = 'genre_list.html'
 
 
-
 class CategoryDetailView(DetailView):
     """Generic class-based detail view for a Genre."""
     model = Genre
@@ -100,25 +80,45 @@ class CategoryDetailView(DetailView):
         return context
 
 
+class PredmetListView(ListView):
+    """Generic class-based view for a list of Predmet."""
+    model = Predmet
+    template_name = 'predmet_list.html'
 
 
-
-
-def hi(request):
-   """View function for home page of site."""
-   # Generate counts of some of the main objects
-   return render(request, 'tap.html')
-
-
-
-
-
-class SearchView(View):
-    model = Book
-    template_name = 'tapmaly.html'
+class PredmetDetailView(DetailView):
+    """Generic class-based detail view for a Lection."""
+    model = Predmet
+    template_name = 'predmet_detail.html'
 
     def get_context_data(self, *args, **kwargs):
-        query = self.request.GET.get('q')
-        found_books = Book.objects.filter(title__icontains=query)
-        context = {'found_books': found_books }
-        return render(self.request, self.template_name, context)
+        context = super(PredmetDetailView, self).get_context_data(*args, **kwargs)
+        context['subject'] = self.model.objects.all()
+        context['subjects_from_predmet'] = self.get_object().lection_set.all()
+        return context
+
+
+class LectionDetailView(DetailView):
+    """Generic class-based detail view for a book."""
+    model = Lection
+    template_name = 'lection_detail.html'
+
+
+# search for title field in database
+class SearchView(View):
+    model = Book
+    template_name = 'search_form.html'
+    
+    def get(self, request, *args, **kwargs):
+        errors = []
+        if 'zapros' in request.GET:
+            zapros = request.GET['zapros']
+            if not zapros:
+                errors.append('Введите поисковый запрос.')
+            elif len(zapros) > 20:
+                errors.append('Введите не более 20 символов.')
+            else:
+                kniga = Book.objects.filter(Q(title__icontains=zapros))
+                return render(request, 'search_results.html', {'kniga': kniga, 'query': zapros})
+        return render(request, 'search_form.html', {'errors': errors})
+# End of === - search function  - ===

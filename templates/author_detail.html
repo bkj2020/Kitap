@@ -6,6 +6,7 @@
 {% endblock sidebar %}
 
 {% block main %}
+{% csrf_token %}
 
     <h5><strong>Author: </strong>{{ author }} </h5>
     <p><strong>Birth: </strong>{{author.date_of_birth}} - <strong>Death: </strong>{% if author.date_of_death %}{{author.date_of_death}}{% endif %}

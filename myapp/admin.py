@@ -1,13 +1,16 @@
 from django.contrib import admin
 # import all models from myapp.models.py
-from .models import Publisher, Genre, Language, Author, Book
+from . models import Publisher, Genre, Language, Author, Book, Predmet, Kafedra, Teacher, Lection #, Prezintation
 
 # Register your models here.
 admin.site.register(Publisher)
 admin.site.register(Genre)
 admin.site.register(Language)
-#admin.site.register(Author)
-#admin.site.register(Book)
+admin.site.register(Predmet)
+admin.site.register(Kafedra)
+admin.site.register(Teacher)
+admin.site.register(Lection)
+#admin.site.register(Prezintation)
 
 
 @admin.register(Author)

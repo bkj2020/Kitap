@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+{% csrf_token %}
+
+<h5><strong>Category: </strong>{{ predmet.name }}</h5>
+
+{% for subj in subjects_from_predmet %}
+
+<div>
+    <h5><strong>Title: </strong>{{ subj.title }}<a href="{{  subj.get_absolute_url }}"> -> go lection</a></h5>
+</div>
+{% endfor %}
+
+{% endblock main %}

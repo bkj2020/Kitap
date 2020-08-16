@@ -6,7 +6,7 @@
 {% endblock sidebar %}
 
 {% block main %}
-
+{% csrf_token %}
     <h5 class="text-center">Author List</h5>
 
     {% if author_list %}

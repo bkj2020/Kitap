@@ -7,17 +7,19 @@
 
 {% block main %}
 {% csrf_token %}
-    <h5 class="text-center">Book List</h5>
-    {% if book_list %}
+    <h5 class="text-center">predmet_list</h5>
+
+    {% if predmet_list %}
         <ul>
-            {% for book in book_list %}
+            {% for pred in predmet_list %}
+                
                 <li>
-                    <a href="{{ book.get_absolute_url }}">{{ book.title }}</a> - Author -> {{book.fk_author}}
+                    <a href="{{ pred.get_absolute_url }}">{{ pred.name }}</a>
                 </li>
             {% endfor %}
         </ul>
     {% else %}
-        <p>There are no books in the library.</p>
+        <p>There are no predmety in the library.</p>
     {% endif %}
 
 {% endblock main %}

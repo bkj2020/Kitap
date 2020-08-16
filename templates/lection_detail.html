@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+{% csrf_token %}
+    <h5><strong>Kafedra: </strong>{{ lection.fk_kafedra }}</h5>
+    <p><strong>Teacher: </strong>{{ lection.fk_teacher }}</p> <!-- author detail link not yet defined -->
+    <p><strong>Language:</strong> {{ lection.fk_language }}</p>
+    <p><strong>Tema:</strong> {{ lection.title }}</p>  
+    <p><strong>Zanatie:</strong> {{ lection.tema_number }}</p>
+    <p><a href="{{ lection.get_lection_path }}"><button class="btn btn-primary">Read lection</button></a> </p>
+
+    
+{% endblock main %}
