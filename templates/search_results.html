@@ -2,20 +2,20 @@
 {% load static %}
 {% block title %}<title>Search result</title>{% endblock %}
 {% block main %}
-    {% csrf_token %}
+{% csrf_token %}
 
     <p>Вы искали: <strong>{{ query }}</strong></p>
-    {% if kniga %}
-        <p style="color: #28a745">Найдено {{ kniga|length }} книг{{ kniga|pluralize }}.</p>
-        <ul>
-            {% for kitap in kniga %}
-                <li>{{ kitap.title }}</li>
-                <p><a href="{{ kitap.get_book_path }}"><button class="btn btn-primary">Read book</button></a></p>
-
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p style="color: #ba2121">Книг, удовлетворяющих заданному критерию, не найдено.</p>
-    {% endif %}
+    
+        {% if kniga %}
+            <p style="color: #28a745">Найдено {{ kniga|length }} книг{{ kniga|pluralize }}.</p>
+            <ul>
+                {% for kitap in kniga %}
+                    <li>{{ kitap.title }}</li>
+                    <p><a href="{{ kitap.get_book_path }}"><button class="btn btn-primary">Read book</button></a></p>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p style="color: #ba2121">Книг, удовлетворяющих заданному критерию, не найдено.</p>
+        {% endif %}
     
 {% endblock main %}

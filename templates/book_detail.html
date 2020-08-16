@@ -7,10 +7,13 @@
 
 {% block main %}
 {% csrf_token %}
+
     <h5><strong>Title: </strong>{{ book.title }}</h5>
+
     <div class="col-sm-4">
         <img src='{{ book.image.url }}' class="img-responsive" style="width: 350px; height: 250px;">
     </div>
+    
     <p><strong>Author: </strong><a href="{% url 'author-detail' book.fk_author.pk %}">{{ book.fk_author }}</a></p> <!-- author detail link not yet defined -->
     <p><strong>Summary:</strong> {{ book.summary }}</p>
     <p><strong>Language:</strong> {{ book.fk_language }}</p>  

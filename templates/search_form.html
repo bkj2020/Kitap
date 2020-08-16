@@ -2,8 +2,10 @@
 {% load static %}
 {% block title %}<title>Search form</title>{% endblock %}
 {% block main %}
-    {% csrf_token %}
+{% csrf_token %}
+
     <h2>Поиск</h2>
+    
     {% if errors %}
         <ul>
             {% for error in errors %}
@@ -14,7 +16,7 @@
 
     <form action="" method="get" id="poisk" name="poisk" >
         <input type="text" name="zapros"/>
-    <br>
+        <br>
         <input type="submit" value="search"/>
     </form>
 

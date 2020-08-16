@@ -6,14 +6,16 @@
 {% csrf_token %}
 
     <h5 class="text-center">Welcom to Japaks Library</h5>
+
     <ul class="sidebar-nav">
         <li><a href="{% url 'books' %}">All books</a></li>
         <li><a href="{% url 'authors' %}">All authors</a></li>
         <li><a href="{% url 'categories' %}">All category</a></li>
         <li><a href="{% url 'lections' %}">All lections</a></li>
+        <li><a href="{% url 'presentations' %}">All Presentations</a></li>
     </ul>
+    
 {% endblock sidebar %}
 
 {% block main %}
-
 {% endblock main %}

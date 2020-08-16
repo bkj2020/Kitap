@@ -104,6 +104,45 @@ class LectionDetailView(DetailView):
     template_name = 'lection_detail.html'
 
 
+class PrezentListView(ListView):
+    """Generic class-based view for a list of Predmet."""
+    model = Predmet
+    template_name = 'prezent_list.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(PrezentListView, self).get_context_data(*args, **kwargs)
+        context['prezent'] = self.model.objects.all()
+        return context
+
+
+class PresentationDetailView(DetailView):
+    """Generic class-based detail view for a Lection."""
+    model = Predmet
+    template_name = 'presentations_detail.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(PresentationDetailView, self).get_context_data(*args, **kwargs)
+        context['flush'] = self.model.objects.all()
+        context['flush_from_predmet'] = self.get_object().prezintation_set.all()
+        return context
+
+
+class PowerpointDetailView(DetailView):
+    """Generic class-based detail view for a book."""
+    model = Prezintation
+    template_name = 'powerpoint_detail.html'
+
+
+
+
+
+
+
+
+
+
+
+
 # search for title field in database
 class SearchView(View):
     model = Book

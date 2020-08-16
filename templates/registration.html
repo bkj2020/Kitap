@@ -4,8 +4,10 @@
 {% block main %}
 
     <div class="formcss">
+
         <h3 class="text-center">Registration</h3>
         <hr>
+        
         <form action="" method="POST">
             {% csrf_token %}
             {{ form.as_p }}

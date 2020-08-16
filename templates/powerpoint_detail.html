@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+{% csrf_token %}
+
+            <h5><strong>Kafedra: </strong>{{ prezintation.fk_kafedra }}</h5>
+            
+            <p><strong>Teacher: </strong>{{ prezintation.fk_teacher }}</p> <!-- author detail link not yet defined -->
+            <p><strong>Language:</strong> {{ prezintation.fk_language }}</p>
+            <p><strong>Tema:</strong> {{ prezintation.title }}</p>  
+            <p><strong>Zanatie:</strong> {{ prezintation.tema_number }}</p>
+            <p><a href="{{ prezintation.get_prezintation_path }}"><button class="btn btn-primary">Watch prezintation</button></a> </p>
+
+{% endblock main %}

@@ -7,14 +7,14 @@
 
 {% block main %}
 {% csrf_token %}
-    <h5 class="text-center">predmet_list</h5>
 
+    <h5 class="text-center">predmet_list</h5>
+    
     {% if predmet_list %}
         <ul>
-            {% for pred in predmet_list %}
-                
+            {% for pred in predmet_list %}                
                 <li>
-                    <a href="{{ pred.get_absolute_url }}">{{ pred.name }}</a>
+                    <a href="{{ pred.get_absolute_url_lec }}">{{ pred.name }}</a>
                 </li>
             {% endfor %}
         </ul>

@@ -1,6 +1,6 @@
 from django.contrib import admin
 # import all models from myapp.models.py
-from . models import Publisher, Genre, Language, Author, Book, Predmet, Kafedra, Teacher, Lection #, Prezintation
+from . models import Publisher, Genre, Language, Author, Book, Predmet, Kafedra, Teacher, Lection, Prezintation
 
 # Register your models here.
 admin.site.register(Publisher)
@@ -10,7 +10,7 @@ admin.site.register(Predmet)
 admin.site.register(Kafedra)
 admin.site.register(Teacher)
 admin.site.register(Lection)
-#admin.site.register(Prezintation)
+admin.site.register(Prezintation)
 
 
 @admin.register(Author)

@@ -120,6 +120,13 @@ class Predmet(models.Model):
         """Returns the url to access a particular Predmet instance."""
         return reverse('predmet-detail', args=[str(self.id)])
 
+
+    def get_absolute_url_lec(self):
+        """Returns the url to access a particular Predmet instance."""
+        return reverse('predmet-detail-lec', args=[str(self.id)])
+
+
+
     def __str__(self):
         """String for representing the Model object (in Admin site etc.)"""
         return '{0}'.format(self.name)
@@ -205,8 +212,7 @@ class Prezintation(models.Model):
 
     def get_absolute_url(self):
         """Returns the url to access a particular prezintation instance."""
-        #return reverse('prezintation-detail', args=[str(self.id)])
-        pass
+        return reverse('powerpoint-detail', args=[str(self.id)])
     
     def get_prezintation_path(self):
         """Returns the url to access a particular category instance."""

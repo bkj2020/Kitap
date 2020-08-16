@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+{% csrf_token %}
+
+    <h5 class="text-center">Prezentation list</h5>
+
+    {% if object_list %}
+        <ul>
+            {% for prez in prezent %}                
+            <li>
+                <strong>Sapak gornush: </strong><a href="{{ prez.get_absolute_url }}">{{ prez.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>            
+    {% else %}
+        <p>There are no predmety in the library.</p>        
+    {% endif %}
+
+{% endblock main %}

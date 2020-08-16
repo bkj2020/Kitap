@@ -7,7 +7,9 @@
 
 {% block main %}
 {% csrf_token %}
+
     <h5 class="text-center">Book List</h5>
+    
     {% if book_list %}
         <ul>
             {% for book in book_list %}

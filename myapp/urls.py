@@ -19,11 +19,14 @@ urlpatterns = [
     path('categories/', views.CategoryListView.as_view(), name='categories'),
     path('category/<int:pk>', views.CategoryDetailView.as_view(), name='category-detail'),
     path('lections/', views.PredmetListView.as_view(), name='lections'),
-    path('lection/<int:pk>', views.PredmetDetailView.as_view(), name='predmet-detail'),
+    path('lection/<int:pk>', views.PredmetDetailView.as_view(), name='predmet-detail-lec'),
     path('conspect/<int:pk>', views.LectionDetailView.as_view(), name='lection-detail'),
+    path('presentations/', views.PrezentListView.as_view(), name='presentations'),
+    path('presentation/<int:pk>', views.PresentationDetailView.as_view(), name='predmet-detail'),
+    path('powerpoint/<int:pk>', views.PowerpointDetailView.as_view(), name='powerpoint-detail'),
+
      # === - look for real metadata request.META from sevrer - ===
     path('display_meta/', views.display_meta),
-
     path('search/', views.SearchView.as_view(), name='poisk'),   
 
 ]
