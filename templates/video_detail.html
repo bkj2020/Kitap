@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+{% csrf_token %}
+
+    <h5><strong>Video gornush: </strong>{{ predmet.name }}.</h5>
+    
+    {% for movie in kino_from_predmet %}
+        <div>
+            <h5><strong>Title: </strong>{{ movie.title }}
+                <a href="{{ movie.get_absolute_url }}"> -> go video</a></h5>
+        </div>        
+    {% endfor %}
+
+{% endblock main %}

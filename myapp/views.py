@@ -11,7 +11,7 @@ import logging
 #from django.views.decorators.cache import cache_page #if need cache function if class do it with urls.py
 
 # import all table from models.py 
-from  myapp.models import Publisher, Genre, Language, Author, Book, Predmet, Kafedra, Teacher, Lection, Prezintation
+from  myapp.models import Publisher, Genre, Language, Author, Book, Predmet, Kafedra, Teacher, Lection, Prezintation, VideoBase
 
 # for searsh book 
 from django.db.models import Q
@@ -133,14 +133,28 @@ class PowerpointDetailView(DetailView):
     template_name = 'powerpoint_detail.html'
 
 
+class VideoListView(ListView):
+    """Generic class-based view for a list of Predmet."""
+    model = Predmet
+    template_name = 'video_list.html'
 
 
+class VideoDetailView(DetailView):
+    """Generic class-based detail view for a Lection."""
+    model = Predmet
+    template_name = 'video_detail.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(VideoDetailView, self).get_context_data(*args, **kwargs)
+        context['kino_detail'] = self.model.objects.all()
+        context['kino_from_predmet'] = self.get_object().videobase_set.all()
+        return context
 
 
-
-
-
-
+class FilmDetailView(DetailView):
+    """Generic class-based detail view for a book."""
+    model = VideoBase
+    template_name = 'film_detail.html'
 
 
 # search for title field in database

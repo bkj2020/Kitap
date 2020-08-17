@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
+
+{% block sidebar %}
+{% endblock sidebar %}
+
+{% block main %}
+{% csrf_token %}
+
+    <h5 class="text-center">Video list</h5>
+
+    {% if object_list %}
+        <ul>
+            {% for vid in object_list %}                
+            <li>
+                <strong>Videolar: </strong><a href="{{ vid.get_absolute_url_vid }}">{{ vid.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>            
+    {% else %}
+        <p>There are no video in the library.</p>        
+    {% endif %}
+
+{% endblock main %}

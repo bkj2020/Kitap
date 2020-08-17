@@ -24,6 +24,10 @@ urlpatterns = [
     path('presentations/', views.PrezentListView.as_view(), name='presentations'),
     path('presentation/<int:pk>', views.PresentationDetailView.as_view(), name='predmet-detail'),
     path('powerpoint/<int:pk>', views.PowerpointDetailView.as_view(), name='powerpoint-detail'),
+    path('videos/', views.VideoListView.as_view(), name='videos'),
+    path('video/<int:pk>', views.VideoDetailView.as_view(), name='predmet-detail-vid'),
+    path('film/<int:pk>', views.FilmDetailView.as_view(), name='film-detail'),
+
 
      # === - look for real metadata request.META from sevrer - ===
     path('display_meta/', views.display_meta),

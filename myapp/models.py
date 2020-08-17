@@ -120,12 +120,13 @@ class Predmet(models.Model):
         """Returns the url to access a particular Predmet instance."""
         return reverse('predmet-detail', args=[str(self.id)])
 
-
     def get_absolute_url_lec(self):
         """Returns the url to access a particular Predmet instance."""
         return reverse('predmet-detail-lec', args=[str(self.id)])
 
-
+    def get_absolute_url_vid(self):
+        """Returns the url to access a particular Predmet instance."""
+        return reverse('predmet-detail-vid', args=[str(self.id)])
 
     def __str__(self):
         """String for representing the Model object (in Admin site etc.)"""
@@ -231,6 +232,38 @@ class Prezintation(models.Model):
 
 
 
+class VideoBase(models.Model):
+    """Model representing a Lection."""
+    review_manuscript = models.FileField(upload_to=get_review_manuscript_full_path)
+
+    # Genre class has already been defined so we can specify the object above.
+    fk_predmet = models.ForeignKey(Predmet, on_delete=models.CASCADE)
+    fk_kafedra = models.ForeignKey(Kafedra, on_delete=models.CASCADE)
+    fk_teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
+    fk_language = models.ForeignKey(Language, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    slug = models.SlugField()
+    tema_number = models.CharField(max_length=10)
+    publication_date = models.DateField()
+
+    def get_absolute_url(self):
+        """Returns the url to access a particular prezintation instance."""
+        return reverse('film-detail', args=[str(self.id)])
+    
+    def get_videobase_path(self):
+        """Returns the url to access a particular category instance."""
+        # Remove media root path from file path
+        # '/home/kakajan/Projects/Kitap/media/kngaDjango/Django.pdf' - '/home/kakajan/Projects/Kitap/media/' = 'kngaDjango/Django.pdf'
+        review = os.path.relpath(self.review_manuscript.path, settings.MEDIA_ROOT)
+
+        # Add media url to file path
+        # '/media/' + 'kngaDjango/Django.pdf' = '/media/kngaDjango/Django.pdf'
+        review = settings.MEDIA_URL + review
+        return review
+    
+    def __str__(self):
+        """String for representing the Model object."""
+        return self.title
 
 
         
