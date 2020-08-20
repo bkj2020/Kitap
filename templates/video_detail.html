@@ -8,13 +8,27 @@
 {% block main %}
 {% csrf_token %}
 
-    <h5><strong>Video gornush: </strong>{{ predmet.name }}.</h5>
-    
-    {% for movie in kino_from_predmet %}
-        <div>
-            <h5><strong>Title: </strong>{{ movie.title }}
-                <a href="{{ movie.get_absolute_url }}"> -> go video</a></h5>
-        </div>        
-    {% endfor %}
+    <h5>I am on the VideoDetailView</h5>
+    <br>
+    <br>
+
+    {% if kino_from_predmet %}
+
+        <h5><strong>Video gornush: </strong>{{ predmet.name }}.</h5>
+        
+        {% for movie in kino_from_predmet %}
+
+            <div>
+                <h5><strong>Title: </strong>{{ movie.title }}
+                    <a href="{{ movie.get_absolute_url }}"> -> go video</a></h5>
+            </div>   
+
+        {% endfor %}
+
+    {% else %}
+
+        <h3>Film list is empty </h3>
+
+    {% endif%}
 
 {% endblock main %}

@@ -5,6 +5,11 @@ from django.http import HttpResponse
 
 # отображения списка — класс, который наследуется от существующего отображения (ListView).
 from django.views.generic import ListView, DetailView, View
+
+# for restricted not authetificated user get some page 
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+
 # for arange own logging files
 import logging
 
@@ -151,11 +156,14 @@ class VideoDetailView(DetailView):
         return context
 
 
-class FilmDetailView(DetailView):
+class FilmDetailView(LoginRequiredMixin, DetailView):
     """Generic class-based detail view for a book."""
     model = VideoBase
     template_name = 'film_detail.html'
-
+    # for redirect to your login page
+    login_url = '/log/'
+    # for redirect to your base page
+    #login_url = '/'
 
 # search for title field in database
 class SearchView(View):

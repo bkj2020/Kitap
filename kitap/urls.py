@@ -12,8 +12,14 @@ urlpatterns = [
     path('', include('myapp.urls')),
     #path('reg/', registerForm.register, name='reg'),
     path('log/', logViews.LoginView.as_view(template_name='login.html'), name='log'),
-    #path('exit/', logViews.LogoutView.as_view(template_name='exit.html'), name='exit'),
+    path('exit/', logViews.LogoutView.as_view(template_name='exit.html'), name='exit'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns

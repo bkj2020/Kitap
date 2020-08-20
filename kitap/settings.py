@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp.apps.MyappConfig',
+    'debug_toolbar'
 ]
 
 SITE_ID = 1
@@ -36,6 +37,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
 
 ROOT_URLCONF = 'kitap.urls'
@@ -137,5 +139,7 @@ LOGGING = {
     },
 }
 
-LOGIN_REDIRECT_URL = '../admin/'
+#LOGIN_REDIRECT_URL = '../admin/'
+LOGIN_REDIRECT_URL = '/'
+
 INTERNAL_IPS = ('127.0.0.1', ) # it is for django_debug utilites

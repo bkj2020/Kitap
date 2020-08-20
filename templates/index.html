@@ -3,6 +3,12 @@
 {% block title %}<title>Japaklan kitaphanasy</title>{% endblock %}
 
 {% block sidebar %}
+{% if user.is_authenticated %}
+     <li>User: {{ user.get_username }}</li>
+   {% else %}
+     <li>Fak you</li>   
+   {% endif %} 
+  </ul>
 {% csrf_token %}
 
     <h5 class="text-center">Welcom to Japaks Library</h5>
